@@ -1,4 +1,4 @@
-package timelib
+package timex
 
 import (
 	"time"
