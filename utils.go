@@ -12,6 +12,11 @@ func Now() time.Time {
 	return time.Now().In(CST)
 }
 
+func UnixTimestamp() uint64 {
+	t := Now()
+	return uint64(t.UnixNano() / 1e6)
+}
+
 var (
 	UTC *time.Location
 	CST *time.Location
